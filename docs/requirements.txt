@@ -1,3 +1,4 @@
 jupyter-book
 matplotlib
 numpy
+urllib3 <=1.26.15
