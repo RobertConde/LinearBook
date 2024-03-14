@@ -3,7 +3,9 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+parts:
+  - caption: Main Book
+    numbered: True
+    chapters:
+      - file: chapters/chapter_0
+      - file: chapters/some_manim

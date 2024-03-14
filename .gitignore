@@ -1,0 +1,6 @@
+.idea
+_build
+.ipynb_checkpoints
+.jupyter
+media
+.DS_Store
