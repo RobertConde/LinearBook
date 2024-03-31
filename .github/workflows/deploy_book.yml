@@ -28,7 +28,7 @@ jobs:
         run: sudo apt install build-essential texlive-latex-extra libcairo2-dev libpango1.0-dev ffmpeg
 
       - name: Install Python packages
-        run: pip install -r docs/requirements.txt
+        run: pip install -r requirements.txt
 
       # (2) Build the book using jupyter-book
       - name: Build the book using jupyter-book
