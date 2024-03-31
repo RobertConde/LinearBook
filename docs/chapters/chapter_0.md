@@ -35,7 +35,7 @@ more stuff!
 A **linear equation** is an equation with finite terms of the form
 
 $$
-  a_1 x_1 + a_2 + \ldots + a_n x_b = b
+  a_1 x_1 + a_2 x_2 + \ldots + a_n x_b = b
 $$
 
 where $x_1, x_2, \ldots, x_n$ are variables (i.e. unknowns), $a_1, a_2, \ldots, a_n$  and $b$ are scalars (i.e. coefficients of the equation), and $n$ is a {abbr}`natural number ({1, 2, 3, ...})` (i.e. # of variables).

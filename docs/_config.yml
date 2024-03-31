@@ -1,7 +1,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Linear Algebra & More
+title: Linear Algebra and More
 author: Robert Conde
 copyright: "2024"
 logo: logo.png
@@ -30,7 +30,11 @@ repository:
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   use_issues_button: false
-  use_repository_button: false
+  use_repository_button: true
+
+launch_buttons:
+  thebe: true
+  binderhub_url: "https://mybinder.org"  # The URL for your BinderHub (e.g., https://mybinder.org)
 
 sphinx:
   config:
@@ -39,14 +43,25 @@ sphinx:
         macros:
           "R": "\\mathbb{R}"
           "T": "\\intercal"
-          "bmatrix": ["\\begin{pmatrix}"]
-          "ematrix": ["\\end{pmatrix}"]
-          "vec": ["\\mathbf{#1}", 1]
+          "bmatrix": "\\begin{pmatrix}"
+          "ematrix": "\\end{pmatrix}"
+          "vec": [ "\\mathbf{#1}", 1 ]
           "u": "\\vec{u}"
           "v": "\\vec{v}"
           "w": "\\vec{w}"
           "x": "\\vec{x}"
           "0": "\\vec{0}"
+    latex_elements:
+      preamble: '\newcommand{\R}{\mathbb{R}}
+        \newcommand{\T}{\intercal}
+        \renewcommand{\bmatrix}{\begin{pmatrix}}
+        \newcommand{\ematrix}{\end{pmatrix}}
+        \renewcommand{\vec}[1]{\mathbf{#1}}
+        \renewcommand{\u}{\vec{u}}
+        \renewcommand{\v}{\vec{v}}
+        \newcommand{\w}{\vec{w}}
+        \renewcommand{\x}{\vec{x}}
+        \newcommand{\0}{\vec{0}}'
 
   extra_extensions:
     - sphinx_inline_tabs

@@ -9,3 +9,4 @@ parts:
     chapters:
       - file: chapters/chapter_0
       - file: chapters/some_manim
+      - file: chapters/polynomial
