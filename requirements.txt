@@ -4,3 +4,4 @@ numpy
 sphinx_inline_tabs
 sphinx-proof
 manim
+mpld3
