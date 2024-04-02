@@ -4,7 +4,7 @@
 title: Linear Algebra and More
 author: Robert Conde
 copyright: "2024"
-logo: logo.png
+logo: "assets/logo.png"
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -29,8 +29,18 @@ repository:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  use_issues_button: false
+  favicon: assets/logo.png
+  use_issues_button: true
   use_repository_button: true
+  baseurl: "https://book.rconde.xyz"
+  google_analytics_id: "G-XM98P0C069"
+
+  comments:
+    hypothesis: true
+    utterances:
+      repo: "RobertConde/LinearBook"
+
+  announcement: "🚧 This site is under active development. Feel free to leave comments or <a href='mailto:conder@ufl.edu'>email us</a> directly. 🚧"
 
 launch_buttons:
   thebe: true
