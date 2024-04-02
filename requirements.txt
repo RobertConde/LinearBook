@@ -5,4 +5,5 @@ sphinx_inline_tabs
 sphinx-proof
 manim
 mpld3
+plotly
 array_to_latex
