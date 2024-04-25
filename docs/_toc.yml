@@ -7,6 +7,8 @@ parts:
   - caption: Main Book
     numbered: True
     chapters:
-      - file: chapters/chapter_0
+      - file: chapters/chapter_1
+      - file: chapters/chapter_2
+      - file: chapters/chapter_3
       - file: chapters/some_manim
       - file: chapters/polynomial
